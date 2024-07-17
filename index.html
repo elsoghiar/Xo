@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X&O</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>X&O</h1>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" class="login-input" placeholder="Username">
+    <input type="password" id="password" class="login-input" placeholder="Password">
+    <button id="login-button" class="login-button">Login</button>
+  </div>
+  <div class="level-selector">
+    <h2>Select Level</h2>
+    <button class="level-button easy">Easy</button>
+    <button class="level-button medium">Medium</button>
+    <button class="level-button hard">Hard</button>
+  </div>
+  <h2><span id="message">Choose your weapon!</span><span class="blinkCursor"></span></h2>
+  <div class="score">balance: <span id="score">0</span></div>
+  <div class="coming-soon"></div>
+  <div class="initial-selector">
+    <div class="btn weapon-button" id="X">X</div>
+    <div class="btn weapon-button" id="O">O</div>
+  </div>
+  <div class="gameboard">
+    <div class="row1">
+      <div class="btn game-button" id="square0"></div>
+      <div class="btn game-button" id="square1"></div>
+      <div class="btn game-button" id="square2"></div>
+    </div>
+    <div class="row1">
+      <div class="btn game-button" id="square3"></div>
+      <div class="btn game-button" id="square4"></div>
+      <div class="btn game-button" id="square5"></div>
+    </div>
+    <div class="row1">
+      <div class="btn game-button" id="square6"></div>
+      <div class="btn game-button" id="square7"></div>
+      <div class="btn game-button" id="square8"></div>
+    </div>
+    <div class="row1">
+      <div class="btn other-button" id="restart-button">Restart</div>
+    </div>
+  </div>
+</div>
+<!-- Animation for X and O on the main screen -->
+<div class="x-o-animation">
+  <div style="font-size: 200px; position: absolute; left: -100px; top: -100px;">X</div>
+  <div style="font-size: 200px; position: absolute; right: -100px; bottom: -100px;">O</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
